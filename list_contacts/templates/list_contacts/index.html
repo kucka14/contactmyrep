@@ -36,44 +36,63 @@
 				</div>
 				
 				<div class="{{ context.display }}">
-					{% for rep in rep_list %}
-						<div class="card off-card">
-							<div class="card-body">
-								<div class="off-container">
-									<div>
-										<div><strong>{{ rep.name }}</strong></div>
+				
+					
+				
+					{% for repl in rep_list %}
+					
+						<div class="off-banner">
+							<div style="position:absolute;left:0px;height:100%;width:30px;background-color:#a31205;"></div>
+							<div style="position:absolute;left:30px;height:100%;width:20px;background-color:#072e69;"></div>
+							
+							<div style="margin-top:2px;"><strong>{{ repl.banner }}</strong></div>
+							<div><button id="{{ repl.banner }}button" onclick="hidePanels('{{ repl.banner }}')" class="btn btn-outline-primary sm-rep-btn">Hide {{ repl.banner }}</button></div>
+							
+							<div style="position:absolute;right:30px;height:100%;width:20px;background-color:#072e69;"></div>
+							<div style="position:absolute;right:0px;height:100%;width:30px;background-color:#a31205;"></div>
+						</div>
+						
+						<div id="{{ repl.banner }}">
+							{% for rep in repl.display %}
+							<div class="card off-card">
+								<div class="card-body">
+									<div class="off-container">
 										<div>
-											{{ rep.office }}
+											<div><strong>{{ rep.name }}</strong></div>
+											<div>
+												{{ rep.office }}
+											</div>
+											
+											{% for number in rep.phone %}
+											<div>
+												{{ number }}
+											</div>
+											{% endfor %}
+											
+											{% for eml in rep.email %}
+											<div>
+												{{ eml }}
+											</div>
+											{% endfor %}
+											
+											<div style="display:block;height:5px;"></div>
+											<div>
+												{% if rep.contact %}
+												<a href="{{ rep.contact }}" target="_blank">
+												<button class="btn btn-primary rep-btn">Contact This Rep Now</button>
+												</a>
+												{% endif %}
+											</div>
 										</div>
 										
-										{% for number in rep.phone %}
-										<div>
-											{{ number }}
+										<div class="off-right">
+											<img id="off-photo" src="{{ rep.photo }}" onerror="this.onerror=null; this.src='/static/list_contacts/images/us_flag.png'">
 										</div>
-										{% endfor %}
 										
-										{% for eml in rep.email %}
-										<div>
-											{{ eml }}
-										</div>
-										{% endfor %}
-										
-										<div style="display:block;height:5px;"></div>
-										<div>
-											{% if rep.contact %}
-											<a href="{{ rep.contact }}" target="_blank">
-											<button class="btn btn-primary rep-btn">Contact This Rep Now</button>
-											</a>
-											{% endif %}
-										</div>
 									</div>
-									
-									<div class="off-right">
-										<img id="off-photo" src="{{ rep.photo }}" onerror="this.onerror=null; this.src='/static/list_contacts/images/us_flag.png'">
-									</div>
-									
 								</div>
 							</div>
+						{% endfor %}
 						</div>
 					{% endfor %}
 				</div>

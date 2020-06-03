@@ -1,3 +1,23 @@
+function hidePanels(panelSection) {
+	var ptarget = document.getElementById(panelSection);
+	var bid = panelSection.concat('button');
+	var btarget = document.getElementById(bid);
+	var hide = 'Hide '.concat(panelSection)
+	var show = 'Show '.concat(panelSection)
+	if (ptarget.style.display === "none") {
+		ptarget.style.display = "block";
+		btarget.innerHTML=hide;
+	} else {
+		ptarget.style.display = "none";
+		btarget.innerHTML=show;
+	}
+}
+
+//function changeButton(buttonId) {
+//	var target
+//}	
+
+
 // This sample uses the Autocomplete widget to help the user select a
 // place, then it retrieves the address components associated with that
 // place, and then it populates the form fields with those details.

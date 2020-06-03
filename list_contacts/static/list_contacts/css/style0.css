@@ -63,6 +63,40 @@
 	font-size:20px;
 }
 
+.off-banner {
+	width:85vw;
+	max-width:600px;
+	padding:0px;
+	padding-left:10px;
+	padding-right:10px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	border-radius:0px;
+	background-color:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+}
+
+.sm-rep-btn {
+	margin-left:15px;
+	height:25px;
+	padding-top:0px;
+	padding-left:3px;
+	padding-right:3px;
+	color:#072e69;
+	border-color:#072e69;
+	
+}
+
+.sm-rep-btn:hover {
+	background-color:#072e69;
+	border-color:lightgrey;
+}
+
 .off-card {
 	width:80vw;
 	max-width:565px;
