@@ -1,0 +1,117 @@
+@keyframes slide-up {
+	from {margin-top:30vh;}
+	to {margin-top:5vh;}
+}
+
+.slide-up {
+	animation-name:slide-up;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes slide-down {
+	to {margin-top:30vh;}
+}
+
+.slide-down {
+	animation-name:slide-down;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+
+.flex-container {
+	display:flex;
+	margin-top:30vh;
+	flex-direction:column;
+	margin-bottom:40px;
+}
+
+.rep-card {
+	width:85vw;
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	border-color:#516987;
+}
+
+.rep-form {
+	width:70vw;
+	max-width:525px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.rep-btn {
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#072e69;
+	border-color:lightgrey;
+}
+
+.rep-btn:hover {
+	background-color:#a31205;
+	border-color:lightgrey;
+}
+
+.rep-hdr {
+	text-align:center;
+	background-color:#072e69;
+	font-family:"Arial Black", Gadget, sans-serif;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+}
+
+.off-card {
+	width:80vw;
+	max-width:565px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+}
+
+.off-container {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+.off-right {
+	display:flex;
+	align-items:center;
+}
+
+#off-photo {
+	height:100px;
+	width:100px;
+}
+
+.hide-div {
+	display:none;
+}
+
+.show-div {
+	display:block;
+}
+
+label {
+	display:none;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+body {
+	background-color:#385070;                     
+}
+
+
+
+
+
+
+
+
+
