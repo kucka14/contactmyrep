@@ -14,15 +14,15 @@ def index(request):
 	context = {}
 
 	if form.is_valid():
-#		try:
-		address = form.cleaned_data['address']
-		rep_list,context = vdo(address,context)
-		rep_list = add_contacts(rep_list,contact_dict)
-		rep_list = split_rep_list(rep_list)
+		try:
+			address = form.cleaned_data['address']
+			rep_list,context = vdo(address,context)
+			rep_list = add_contacts(rep_list,contact_dict)
+			rep_list = split_rep_list(rep_list)
 			
-#		except:
-#			rep_list,context = ivdo(context)
-#			context['errors'] = ['Please enter a valid address']
+		except:
+			rep_list,context = ivdo(context)
+			context['errors'] = ['Please enter a valid address']
 	else:
 		form = AddressForm()
 		rep_list,context = ivdo(context)
