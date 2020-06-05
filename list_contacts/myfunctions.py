@@ -33,7 +33,7 @@ def make_rep_list(address):
 				except:
 					pass
 			
-			display_list = [["name","name"],["photo","photoUrl"],["phone","phones"],["email","emails"]]
+			display_list = [["name","name"],["photo","photoUrl"],["phone","phones"],["email","emails"],["party","party"]]
 			for item in display_list:
 				try:
 					rep_dict[officialid][item[0]] = data5["officials"][officialid][item[1]]           

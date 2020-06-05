@@ -5,10 +5,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
-		<title>FindMyRep</title>
+		<title>ContactMyRep</title>
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="/static/list_contacts/css/style0.css">
+		
+		<link rel="icon" href="/static/list_contacts/images/favicon.ico">
 	
 	</head>
 
@@ -18,6 +20,8 @@
 				<div class="card rep-card">
 					<div class="card-header rep-hdr">
 						Contact <font color="#a31205">My</font> Rep
+						<div style="display:inline-block;width:0px;"></div>
+						<img src="/static/list_contacts/images/master_logo.png" height="35px" width="35px">
 					</div>
 					<div class="card-body">
 						<div class="form-row">
@@ -63,6 +67,10 @@
 												{{ rep.office }}
 											</div>
 											
+											<div>
+												{{ rep.party }}
+											</div>
+											
 											{% for number in rep.phone %}
 											<div>
 												{{ number }}
@@ -98,6 +106,10 @@
 				</div>
 				
 		</div>
+		
+		<footer style="text-align:center;">
+			<p>Data attained from the <a style="color:#072e69" target="_blank" href="https://developers.google.com/civic-information/">Google Civic Information API</a></p>
+		</footer>
 	
 		<script src="/static/list_contacts/js/script0.js"></script>
 		
