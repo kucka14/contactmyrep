@@ -26,7 +26,8 @@ SECRET_KEY = 'l0_baw@tiw6ui87v#1@#2klsu-m03igp#x1qs^loigzu@sfs6o'
 DEBUG = True
 
 ALLOWED_HOSTS = ['contactmyrep.herokuapp.com',
-				 '127.0.0.1']
+				 '127.0.0.1',
+				 'www.contactmyrep.com']
 
 
 # Application definition
