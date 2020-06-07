@@ -29,7 +29,11 @@ def index(request):
 		
 	return render(request, 'list_contacts/index.html', {'form':form,'rep_list':rep_list,'context':context})
 
+def robots(request):
+	return render(request, 'list_contacts/robots.txt')
 	
+def sitemap(request):
+	return render(request, 'list_contacts/sitemap.xml')
 
 	
 	
