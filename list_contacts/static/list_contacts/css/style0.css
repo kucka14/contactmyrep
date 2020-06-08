@@ -36,6 +36,12 @@
 	border-color:#516987;
 }
 
+@media screen and (max-width:800px) {
+	.rep-card {
+		background-color:green
+	}
+}
+
 .rep-form {
 	width:70vw;
 	max-width:525px;
