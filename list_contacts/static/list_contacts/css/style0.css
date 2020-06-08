@@ -1,8 +1,17 @@
 /*d1c330 - yellow color for website*/
 
+
+
 @keyframes slide-up {
 	from {margin-top:30vh;}
 	to {margin-top:5vh;}
+}
+
+@media screen and (max-width:550px) {
+	@keyframes slide-up {
+		from {margin-top:20vh;}
+		to {margin-top:5vh;}
+	}
 }
 
 .slide-up {
@@ -13,6 +22,12 @@
 
 @keyframes slide-down {
 	to {margin-top:30vh;}
+}
+
+@media screen and (max-width:550px) {
+	@keyframes slide-down {
+		to {margin-top:20vh;}
+	}
 }
 
 .slide-down {
@@ -36,17 +51,43 @@
 	border-color:#516987;
 }
 
-@media screen and (max-width:800px) {
-	.rep-card {
-		background-color:green
-	}
-}
-
 .rep-form {
 	width:70vw;
 	max-width:525px;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.off-card {
+	width:80vw;
+	max-width:565px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+}
+
+#off-photo {
+	height:100px;
+	width:100px;
+}
+
+@media screen and (max-width:550px) {
+	.flex-container {
+		margin-top:20vh;
+	}
+	.rep-card {
+		width:468px;
+	}
+	.rep-form {
+		width:385px;
+	}
+	.off-card {
+		width:440px;
+	}
+	#off-photo {
+		width:18vw;
+		min-width:40px;
+	}
 }
 
 .rep-btn {
@@ -55,6 +96,9 @@
 	margin-right:auto;
 	background-color:#072e69;
 	border-color:lightgrey;
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
 }
 
 .rep-btn:hover {
@@ -74,6 +118,7 @@
 .off-banner {
 	width:85vw;
 	max-width:600px;
+	min-width:300px;
 	padding:0px;
 	padding-left:10px;
 	padding-right:10px;
@@ -105,14 +150,6 @@
 	border-color:lightgrey;
 }
 
-.off-card {
-	width:80vw;
-	max-width:565px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:15px;
-}
-
 .off-container {
 	display:flex;
 	flex-direction:row;
@@ -122,11 +159,6 @@
 .off-right {
 	display:flex;
 	align-items:center;
-}
-
-#off-photo {
-	height:100px;
-	width:100px;
 }
 
 .hide-div {
