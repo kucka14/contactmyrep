@@ -76,17 +76,17 @@
 		margin-top:20vh;
 	}
 	.rep-card {
-		width:468px;
+		min-width:425px;
 	}
 	.rep-form {
 		width:385px;
 	}
 	.off-card {
-		width:440px;
+		min-width:400px;
 	}
 	#off-photo {
-		width:18vw;
-		min-width:40px;
+		width:14vw;
+		min-width:60px;
 	}
 }
 
