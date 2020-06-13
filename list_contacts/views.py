@@ -33,7 +33,7 @@ def robots(request):
 	return render(request, 'list_contacts/robots.txt')
 	
 def sitemap(request):
-	return render(request, 'list_contacts/sitemap.xml')
+	return render(request, 'list_contacts/sitemap.xml')	
 
 	
 	
