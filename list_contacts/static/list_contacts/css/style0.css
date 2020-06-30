@@ -63,6 +63,7 @@
 .off-card {
 	width:80vw;
 	max-width:565px;
+	min-width:280px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:15px;
@@ -135,7 +136,6 @@
 	}
 	.off-card {
 		width:85vw;
-		min-width:280px;
 	}
 	.off-left {
 		font-size:3.5vw;
@@ -158,6 +158,11 @@
 
 
 .rep-btn:hover {
+	background-color:#a31205;
+	border-color:lightgrey;
+}
+
+.rep-btn-top:hover {
 	background-color:#a31205;
 	border-color:lightgrey;
 }
