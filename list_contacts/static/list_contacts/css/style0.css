@@ -46,6 +46,7 @@
 .rep-card {
 	width:85vw;
 	max-width:600px;
+	min-width:300px;
 	margin-left:auto;
 	margin-right:auto;
 	border-color:#516987;
@@ -54,6 +55,7 @@
 .rep-form {
 	width:70vw;
 	max-width:525px;
+	min-width:265px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -66,28 +68,29 @@
 	margin-top:15px;
 }
 
+.off-left {
+	
+}
+
+.off-right {
+	display:flex;
+	align-items:center;
+}
+
 #off-photo {
 	height:100px;
 	width:100px;
 }
 
-@media screen and (max-width:550px) {
-	.flex-container {
-		margin-top:20vh;
-	}
-	.rep-card {
-		min-width:425px;
-	}
-	.rep-form {
-		width:385px;
-	}
-	.off-card {
-		min-width:400px;
-	}
-	#off-photo {
-		width:14vw;
-		min-width:60px;
-	}
+.rep-btn-top {
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#072e69;
+	border-color:lightgrey;
+	padding:3px;
+	padding-left:5px;
+	padding-right:5px;
 }
 
 .rep-btn {
@@ -99,20 +102,6 @@
 	padding:3px;
 	padding-left:5px;
 	padding-right:5px;
-}
-
-.rep-btn:hover {
-	background-color:#a31205;
-	border-color:lightgrey;
-}
-
-.rep-hdr {
-	text-align:center;
-	background-color:#072e69;
-	font-family:"Arial Black", Gadget, sans-serif;
-	color:white;
-	font-weight:bold;
-	font-size:20px;
 }
 
 .off-banner {
@@ -133,6 +122,56 @@
 	align-items:center;
 	position:relative;
 }
+
+@media screen and (max-width:550px) {
+	.rep-card {
+		width:90vw;
+	}
+	.rep-form {
+		width:80vw;
+	}
+	.flex-container {
+		margin-top:20vh;
+	}
+	.off-card {
+		width:85vw;
+		min-width:280px;
+	}
+	.off-left {
+		font-size:3.5vw;
+	}
+	.off-right {
+		
+	}
+	.rep-btn {
+		font-size:3.5vw;
+	}
+	#off-photo {
+		width:18vw;
+		min-width:60px;
+	}
+	.off-banner {
+		width:90vw;
+	}
+}
+
+
+
+.rep-btn:hover {
+	background-color:#a31205;
+	border-color:lightgrey;
+}
+
+.rep-hdr {
+	text-align:center;
+	background-color:#072e69;
+	font-family:"Arial Black", Gadget, sans-serif;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+}
+
+
 
 .sm-rep-btn {
 	margin-left:15px;
@@ -156,10 +195,9 @@
 	justify-content:space-between;
 }
 
-.off-right {
-	display:flex;
-	align-items:center;
-}
+
+
+
 
 .hide-div {
 	display:none;
