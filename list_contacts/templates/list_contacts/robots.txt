@@ -1,1 +1,1 @@
-Sitemap: https://www.contactmyrep.com/sitemap.xml
+Sitemap: http://www.contactmyrep.com/sitemap.xml
